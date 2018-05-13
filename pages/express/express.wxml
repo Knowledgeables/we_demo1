@@ -1,0 +1,23 @@
+<!--pages/快递/快递.wxml-->
+<view class='body'>
+  <view class='express_top'>
+    <view class='select_box express_title'>
+      <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index]}}</text>
+        <image class='select_img {{show&&"select_img_rotate"}}' src='/image/down.png'></image>
+      </view>
+      <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+      </view>
+    </view>
+    <input class='express_input' placeholder="请输入运单号码" auto-focus/>
+  </view>
+  <scroll-view scroll-y="true">
+    <view class='express_content' wx:for="{{express.data.data}}">
+      <text class='start'>{{item.time}}</text>
+      <text class='to'>{{item.ftime}}</text>
+      <text class='content'>{{item.context}}</text>
+    </view>
+  </scroll-view>
+  <button class='btn_express' catchtap='btnExpress'> 点击查询</button>
+</view>

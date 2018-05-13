@@ -1,0 +1,16 @@
+<include src="../template/header.wxml" />
+<button type="default" > default </button>
+<button type="primary"  bindtap='btnClick'>{{btnText}}</button>
+<text>{{text}}</text>
+<view wx:if="{{show}}">{{text}}</view>
+<text class='titleif_else'>if/else标签</text>
+<button type="primary"  bindtap='btn2show'>点击设置显示隐藏</button>
+<view wx:if="{{showbtn}}">tab1</view>
+<view wx:else="{{showbtn}}">tab2</view>
+<text class='titleif_else'>循环标签 for</text>
+<view wx:for="{{news}}">
+<text class='pice3 name'>{{index+1}}</text>
+<text class='pice3 name'>{{item.name}}</text>
+<text class='pice3 age'>{{item.age}}</text>
+<text class='pice3 content'>{{item.content}}</text>
+</view>

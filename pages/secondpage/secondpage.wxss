@@ -1,0 +1,22 @@
+/* pages/secondpage/secondpage.wxss */
+.view1
+{
+width: 100px;
+background-color: red;
+height: 80px;
+text-align: center;
+}
+.view2
+{
+width: 80px;
+background-color: blue;
+height: 60px;
+text-align: center;
+}
+.view3
+{
+width: 60px;
+background-color: green;
+height: 40px;
+text-align: center;
+}

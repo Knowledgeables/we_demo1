@@ -1,0 +1,15 @@
+<!--pages/secondpage/secondpage.wxml-->
+<text class='bindtext'>使用bind方式绑定事件，会产生冒泡事件</text>
+<view class='view1'  class='view1' bindtap='view1tap'>view1
+<view class='view2'  class='view2' bindtap='view2tap'>view2
+<view class='view3'  class='view3' bindtap='view3tap'>view3
+</view>
+</view>
+</view>
+<text class='catchtext'>使用catch方式绑定事件，不会产生冒泡事件</text>
+<view class='view1'  class='view1' catchtap='view1tap'>view1
+<view class='view2'  class='view2' catchtap='view2tap'>view2
+<view class='view3'  class='view3' catchtap='view3tap'>view3
+</view>
+</view>
+</view>

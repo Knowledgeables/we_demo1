@@ -1,0 +1,26 @@
+/* pages/firstpage/firstpage.wxss */
+.titleif_else{
+  font-size: 28px;
+  display: block;
+  background-color: red;
+}
+.pice3
+{
+  width: calc(100%/3);
+  float: left;
+}
+.name
+{
+  font-size: 13px;
+  background-color:green;
+}
+.age
+{
+  font-size: 13px;
+  background-color:blue;
+}
+.content
+{
+  font-size: 13px;
+  background-color:gray;
+}
