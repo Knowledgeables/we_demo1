@@ -1,0 +1,12 @@
+/* pages/lifecycle/lifecycle.wxss */
+text
+{
+  display: block;
+  text-align:center;
+}
+.item
+{
+  display: block;
+  text-align:center;
+  font-size: 13px;
+}

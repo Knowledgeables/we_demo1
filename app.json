@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/lifecycle/lifecycle",
     "pages/express/express",
     "pages/secondpage/secondpage",
     "pages/firstpage/firstpage",

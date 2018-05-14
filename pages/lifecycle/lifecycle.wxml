@@ -1,0 +1,5 @@
+<!--pages/lifecycle/lifecycle.wxml-->
+<text >生命周期演示</text>
+<view wx:for="{{lifecycle}}">
+<text class='item' style='font-size:15px;'>{{item}}</text>
+</view>
